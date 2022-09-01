@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Calculator;
+  src: url("../font/calculator-cufonfonts/Calculator.ttf");
+}
+body {
+  background-color: #adadad;
+}
+#calculator {
+  background-color: #222;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 20px 2px rgba(0, 0, 0, 0.5);
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-template-rows: auto repeat(5, 40px);
+}
+
+button {
+  padding: 0.25em;
+  cursor: pointer;
+  background-color: #444;
+  color: #fff;
+}
+
+#display {
+  padding: 10px;
+  font-size: 2em;
+  text-align: right;
+  background-color: #253d29;
+  box-shadow: inset 2px 2px 0 black;
+  margin-bottom: 15px;
+  font-family: Calculator;
+  grid-column: 1 / -1;
+}
+
+.igual {
+  background-color: #686de0;
+  grid-row: 5 / 7;
+  grid-column: 4 / 5;
+}
+
+.zero {
+  background-color: #adadad;
+  grid-column: 1 / 3;
+  background-color: #444;
+}
+
+.ac {
+  background-color: #eb4d4b;
+}
